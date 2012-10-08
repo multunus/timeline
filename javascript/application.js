@@ -74,3 +74,12 @@ setUpPopOverCloseOnClick = function() {
 		}
 	});
 };
+
+var Turks = [{name: 'manoj', display_name: 'Manoj'}, {name: 'tamil', display_name: 'Tamil'}, {name: 'akshay', display_name: 'Akshay'}, {name: 'sreenath', display_name: 'Sreenath'}, {name: 'anup', display_name: 'Anup'}, {name: 'ernest', display_name: 'Ernest'}, {name: 'abhilash', display_name: 'Abhilash'}, {name: 'kp', display_name: 'KP'}, {name: 'you', display_name: 'You?'}];
+
+function renderTurkTemplate(){
+    var template = _.template($('#turk-template').html());
+    _.each(Turks, function(turk){
+        $('.the-turks').append(template({name: turk.name, display_name: turk.display_name, popover_for_turk: 'manoj'}));
+    });
+}
