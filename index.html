@@ -36,6 +36,12 @@
 
   <body>
     <div class="row-fluid header">
+      <div class="share-buttons">
+        <div class="sharing">
+          <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+          <script type="IN/Share" data-counter="right"></script>
+        </div>
+      </div>
     </div>
 
     <div class="row-fluid title-line">
@@ -170,20 +176,17 @@
   <a target="_blank" href="<%= LOGO.HREF %>">
     <img src="<%= LOGO.SRC %>" alt="<%= LOGO.ALT %>" />
   </a>
-  <div class="share-buttons">
-    <div class="sharing">
-      <div class="fb-like" data-width="74" data-layout="button_count"
-           data-href="<%= SHARE.HREF %>" data-show-faces="false">
-      </div>
-      <div class="g-plusone" data-size="medium" data-href="<%= SHARE.HREF %>">
-      </div>
-      <a href="http://twitter.com/share" class="twitter-share-button"
-         data-url="<%= SHARE.HREF %>" data-counturl="<%= SHARE.HREF %>" data-count="none" data-text="SHARE.TEXT">
-      </a>
-      <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
-      <script type="IN/Share" data-counter="right"></script>
-    </div>
+</script>
+
+<script type="text/template" id="share-template">
+  <div class="fb-like" data-width="74" data-layout="button_count"
+       data-href="<%= SHARE.HREF %>" data-show-faces="false">
   </div>
+  <div class="g-plusone" data-size="medium" data-href="<%= SHARE.HREF %>">
+  </div>
+  <a href="http://twitter.com/share" class="twitter-share-button"
+     data-url="<%= SHARE.HREF %>" data-counturl="<%= SHARE.HREF %>" data-count="none" data-text="SHARE.TEXT">
+  </a>
 </script>
 
 <script type="text/template" id="title-template">

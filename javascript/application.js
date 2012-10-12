@@ -120,6 +120,8 @@ function renderTimeline(){
 function renderHeaderAndTitle(){
     var headerTemplate = _.template($('#header-template').html());
     $('.header').append(headerTemplate());
+    var shareTemplate = _.template($('#share-template').html());
+    $('.sharing').append(shareTemplate());
     var titleTemplate = _.template($('#title-template').html());
     $('.title-line').append(titleTemplate());
 }
