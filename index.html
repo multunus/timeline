@@ -164,11 +164,17 @@
     <div class="timelineToggle"><p><a class="expandAll">+ expand all</a></p></div>
     <br class="clear">
     <div class="turk-name"><%= display_name %></div>
+    <% if(name == 'you'){%>
+    <div class="call-to-action">
+      <%= roles %>
+    </div>
+    <% }else{ %>
     <div class="turk-roles"><%= roles %></div>
     <% major.forEach(function(year){ %>
       <% year.minorTemplate = minorTemplate; %>
       <%= majorTemplate(year) %>
     <% }); %>
+    <% } %>
   </div>
 </script>
 
