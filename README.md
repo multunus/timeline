@@ -3,7 +3,7 @@ Timeline
 
 __An open source Javascript plugin for creating timeline for your company.__
 
-Checkout an Example [http://multunus.com/youngturks](http://multunus.com/youngturks). This uses data from the [Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0AurK0h8yI6n6dEJMa0thYVI0QmtUOVMzMkp1VkpfQ0E).
+Checkout an Example [http://multunus.github.com/timeline](http://multunus.github.com/timeline). This uses data from the [Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0AurK0h8yI6n6dEJMa0thYVI0QmtUOVMzMkp1VkpfQ0E).
 
 ## How to
 
