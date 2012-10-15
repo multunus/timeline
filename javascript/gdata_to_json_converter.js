@@ -1,13 +1,20 @@
-GDataToJSONConverter = function(key, wid){
+GDataToJSONConverter = function(key, wids){
     this.key = key;
-    this.wid = wid;
+    this.wids = wids;
     this.getdata = function(callback){
+        this.callback = callback;
+        this.Timeline = [];
+        for(var index in this.wids){
+            this.getDataFromGoogleSpreadsheet(this.wids[index]);
+        }
+    };
+
+    this.getDataFromGoogleSpreadsheet = function(wid){
         var self = this;
-        return $.getJSON(
+        $.getJSON(
             'http://spreadsheets.google.com/feeds/list/' +
-                self.key + '/' + self.wid + '/public/values?alt=json-in-script&callback=?',
+                self.key + '/' + wid + '/public/values?alt=json-in-script&callback=?',
             function( data ){
-                var Timeline = [];
                 for( var l in data.feed.entry )
                 {
                     var jsonData = {};
@@ -22,9 +29,11 @@ GDataToJSONConverter = function(key, wid){
                     var yearFrom = from.getFullYear();
                     var major = self.getTimeline(yearFrom, yearTo);
                     jsonData.major = major;
-                    Timeline.push(jsonData);
+                    self.Timeline[parseInt(wid)-1] = jsonData;
                 }
-                callback(Timeline);
+                if(self.Timeline.filter(function(value) { return value !== undefined; }).length == self.wids.length){
+                    self.callback(self.Timeline);
+                }
             });
     };
 
@@ -58,16 +67,15 @@ GDataToJSONConverter = function(key, wid){
 
     this.getEvents = function(month, year){
         var events = [];
-        var baseKey = "gsx$"+monthNames[month-1]+year;
-        var count = 2;
-        var key = baseKey;
-        while(this.entry[key] != undefined){
+        var key = "gsx$"+monthNames[month-1]+year;
+        if(this.entry[key] != undefined){
             var event = this.entry[key].$t;
             if(event.length>0){
-                events.push(event);
+                var eventsArray = event.split(/-{3,}/);
+                for(var index in eventsArray){
+                    events.push(eventsArray[index]);
+                }
             }
-            key = baseKey+"_"+count;
-            count+=1;
         }
         return events;
     };

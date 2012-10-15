@@ -1,5 +1,5 @@
-SPREADSHEET_KEY = "0AurK0h8yI6n6dEJMa0thYVI0QmtUOVMzMkp1VkpfQ0E";
-WORKSHEET_ID = "1";
+SPREADSHEET_KEY = "0AurK0h8yI6n6dGM1MWgxRW5aX3dqM3ZNTEU2by1jZUE";
+WORKSHEET_IDS = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 LOGO = {
     SRC : "http://multunus.herokuapp.com/images/g36891.png",
     ALT : "multunus",

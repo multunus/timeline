@@ -113,7 +113,7 @@ function bindTimeLine(){
 }
 
 function renderTimeline(){
-    var gdata = new GDataToJSONConverter(SPREADSHEET_KEY, WORKSHEET_ID);
+    var gdata = new GDataToJSONConverter(SPREADSHEET_KEY, WORKSHEET_IDS);
     gdata.getdata(renderTurkTemplate);
 }
 
