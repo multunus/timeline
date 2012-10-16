@@ -11,4 +11,10 @@ describe("Google Spreadsheet data to JSON converter", function(){
                     expect(events[0]).toEqual('asd');
                 });
 
+             it("Should send request to fetch the details from each worksheet",function(){
+                    var ajaxSpy = sinon.spy(jQuery, 'ajax');
+                    var gdata = new GDataToJSONConverter("Google Spreadsheet Key", ["1", "2"]);
+                    gdata.getdata();
+                    expect(ajaxSpy).toHaveBeenCalledTwice();
+                });
          });

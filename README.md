@@ -3,13 +3,13 @@ Timeline
 
 __An open source Javascript plugin for creating timeline for your company.__
 
-Checkout an Example [http://multunus.github.com/timeline](http://multunus.github.com/timeline). This uses data from the [Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0AurK0h8yI6n6dEJMa0thYVI0QmtUOVMzMkp1VkpfQ0E).
+Checkout an Example [http://multunus.github.com/timeline](http://multunus.github.com/timeline). This uses data from the [Google Spreadsheet](https://docs.google.com/a/multunus.com/spreadsheet/ccc?key=0AurK0h8yI6n6dGM1MWgxRW5aX3dqM3ZNTEU2by1jZUE).
 
 ## How to
 
 * Clone the repository.
 * Edit the settings.js to customize.
-* Create a [Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0AurK0h8yI6n6dEJMa0thYVI0QmtUOVMzMkp1VkpfQ0E) with the timeline data as used by the example site.
+* Create a [Google Spreadsheet](https://docs.google.com/a/multunus.com/spreadsheet/ccc?key=0AurK0h8yI6n6dGM1MWgxRW5aX3dqM3ZNTEU2by1jZUE) with the timeline data as used by the example site.
 
 ### For developers
 

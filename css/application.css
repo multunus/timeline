@@ -222,7 +222,7 @@ body {
   transition: filter 0.6s ease;
 }
 
-.turk img:hover {
+.turk img:hover, .turk[name="you"] img {
   filter: none;
   -webkit-filter: grayscale(0%);
 }
@@ -249,6 +249,10 @@ img.color {
 
 .timelineMinor dt a:hover {
   text-decoration: none;
+}
+
+.timelineEvent a:hover {
+    text-decoration: underline;
 }
 
 .timelineContainer {
