@@ -80,6 +80,8 @@ renderTurkTemplate = function(Timelines){
     var timelineMinorTemplate = _.template($('#timelineMinor-template').html());
     var timelineMajorTemplate = _.template($('#timelineMajor-template').html());
     var timelineContainerTemplate = _.template($('#timelineContainer-template').html());
+    var turksElement = $('.the-turks');
+    turksElement.attr('style',"margin-left: "+(DEFAULT_NUMBER_OF_TURKS-Timelines.length)*5.5+"%;");
     _.each(Timelines, function(turk){
                $('.the-turks').append(turkTemplate({name: turk.name, display_name: turk.display_name, popover_for_turk: 'manoj'}));
                turk.majorTemplate = timelineMajorTemplate;
