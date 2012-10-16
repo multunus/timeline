@@ -123,7 +123,7 @@ function renderHeaderAndTitle(){
     var headerTemplate = _.template($('#header-template').html());
     $('.header').append(headerTemplate());
     var shareTemplate = _.template($('#share-template').html());
-    $('.sharing').append(shareTemplate());
+    $('.sharing').prepend(shareTemplate());
     var titleTemplate = _.template($('#title-template').html());
     $('.title-line').append(titleTemplate());
 }

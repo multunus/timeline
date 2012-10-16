@@ -18,6 +18,7 @@
     <script type="text/javascript" src = "javascript/underscore-min.js" ></script>
     <script type="text/javascript" src = "javascript/bootstrap.js" ></script>
     <script type="text/javascript" src = "javascript/timeliner.min.js" ></script>
+    <script type="text/javascript" src = "javascript/constants.js" ></script>
     <script type="text/javascript" src = "javascript/settings.js" ></script>
     <script type="text/javascript" src = "javascript/gdata_to_json_converter.js" ></script>
     <script type="text/javascript" src = "javascript/application.js" ></script>
