@@ -14,7 +14,7 @@ Checkout an example here: [http://multunus.github.com/timeline](http://multunus.
   * Your Logo
   * FB/Twitter/LinkedIn Share button details
 
-### Tell me more - What are the key components?
+## Tell me more - What are the key components?
 
 * Uses [Google Spreadsheet API](https://developers.google.com/gdata/samples/spreadsheet_sample) to fetch timeline data
 * Uses [Underscore.js](http://underscorejs.org/) for templating
