@@ -25,6 +25,9 @@ GDataToJSONConverter = function(key, wids){
                     jsonData.roles = entry.gsx$roles.$t;
                     var from = new Date(Date.parse(entry.gsx$from.$t));
                     var to = new Date(Date.parse(entry.gsx$to.$t));
+                    if((from=="Invalid Date") || (to=="Invalid Date")){
+                        throw "The given date format is not supported by this browser";
+                    }
                     var yearTo = to.getFullYear();
                     var yearFrom = from.getFullYear();
                     var major = self.getTimeline(yearFrom, yearTo);
