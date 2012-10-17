@@ -1,9 +1,11 @@
 Team Timeline
 ========
 
-__An open source tool for creating achievement timelines for key employees of your company.__
+__An open source tool for creating achievement timelines for key employees of your company.__ For more details, visit http://multunus.com/opensource#timeline
 
-Checkout an example here: [http://multunus.github.com/timeline](http://multunus.github.com/timeline). If you like the idea and the User Inteface, you'll LOVE the Google Docs Spreadsheet based "CMS" system.
+## Demo
+
+[http://multunus.github.com/timeline](http://multunus.github.com/timeline). If you like the idea and the User Inteface, you'll LOVE the Google Docs Spreadsheet based "CMS" system.
 
 ## How do I use this
 
@@ -19,7 +21,7 @@ Checkout an example here: [http://multunus.github.com/timeline](http://multunus.
 * Uses [Google Spreadsheet API](https://developers.google.com/gdata/samples/spreadsheet_sample) to fetch timeline data
 * Uses [Underscore.js](http://underscorejs.org/) for templating
 * Uses [timeliner](https://github.com/technotarek/timeliner) for rendering the timeline
-* Uses [jsPlumb](https://github.com/sporritt/jsplumb/) 
+* Uses [jsPlumb](https://github.com/sporritt/jsplumb/) for connecting the images of the team members to their respective timelines.
 
 ## Idea Backlog 
 
